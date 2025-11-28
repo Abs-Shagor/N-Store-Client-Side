@@ -13,6 +13,8 @@ import Womens from './Components/Womens';
 import Jewelaries from './Components/Jewelaries';
 import Electronics from './Components/Electronics';
 import ProductDetails from './Components/ProductDetails';
+import Login from './Components/Login';
+import Signup from './Components/SignUp';
 
 
 const router = createBrowserRouter([
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
           return fetch(`https://fakestoreapi.com/products/${params.id}`)
         }
       },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/signup',
+        element: <Signup></Signup>
+      }
     ]
   }
 ])

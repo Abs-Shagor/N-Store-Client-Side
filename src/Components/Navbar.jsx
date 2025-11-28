@@ -41,19 +41,19 @@ const Navbar = () => {
 
                 <div className="flex gap-1 sm:gap-2 items-center font-time-new-roman text-[14px] sm:text-[16px] font-medium">
 
-                    <Link className="transform transition-transform duration-300 ease-in-out hover:scale-105  ">Login</Link>
+                    <Link to={'/login'} className="transform transition-transform duration-300 ease-in-out hover:scale-105  ">Login</Link>
                     <p>|</p>
-                    <Link className="transform transition-transform duration-300 ease-in-out hover:scale-105  ">Signup</Link>
+                    <Link to={'/signup'} className="transform transition-transform duration-300 ease-in-out hover:scale-105  ">Signup</Link>
                 </div>
 
             </div>
             <div className={`absolute left-0 top-13 sm:top-13 z-1000 transition-transform duration-300 ease-in-out ${open ? 'translate-x-0' : '-translate-x-full'}`}>
                 <nav className="flex flex-col min-h-screen min-w-screen sm:min-w-[350px] bg-gray-700 text-white pl-2 ">
-                    <NavLink to={'/'} className="border-b-1 border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">HOME</NavLink>
-                    <NavLink to={'/mens'} className="border-b-1 border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">MENS</NavLink>
-                    <NavLink to={'/womens'} className="border-b-1 border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">WOMENS</NavLink>
-                    <NavLink to={'/jewelaries'} className="border-b-1 border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">JEWELARIES</NavLink>
-                    <NavLink to={'/electronics'} className="border-b-1 border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">ELOCTRONICS</NavLink>
+                    <NavLink to={'/'} className="border-b border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">HOME</NavLink>
+                    <NavLink to={'/mens'} className="border-b border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">MENS</NavLink>
+                    <NavLink to={'/womens'} className="border-b border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">WOMENS</NavLink>
+                    <NavLink to={'/jewelaries'} className="border-b border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">JEWELARIES</NavLink>
+                    <NavLink to={'/electronics'} className="border-b border-gray-400 hover:bg-[#373535] pt-4 sm:pt-5 ">ELOCTRONICS</NavLink>
 
                 </nav>
             </div>
